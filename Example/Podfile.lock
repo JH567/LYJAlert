@@ -1,0 +1,16 @@
+PODS:
+  - LYJAlert (0.1.0)
+
+DEPENDENCIES:
+  - LYJAlert (from `../`)
+
+EXTERNAL SOURCES:
+  LYJAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LYJAlert: 77d6f1fb6f6da875facdf1d8d491a164e3617c0d
+
+PODFILE CHECKSUM: 5f203e2e1f8fce93090d964656ea83328ed72c69
+
+COCOAPODS: 1.10.0

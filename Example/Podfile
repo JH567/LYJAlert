@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LYJAlert_Example' do
+  pod 'LYJAlert', :path => '../'
+
+  target 'LYJAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
