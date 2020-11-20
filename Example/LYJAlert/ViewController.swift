@@ -15,11 +15,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        LYJAlert.showAlert(title: "提示", message: "nishi sb ma")
-        
-        LYJAlert.showAlert(title: "提示", messageL: "nishi sb ma", cancleTitle: "cancle") { (action) in
-            print("\(action.title ?? "")")
-        }
+//        LYJAlert.showAlert(title: "提示", message: "nishi sb ma")
+//
+//        LYJAlert.showAlert(title: "提示", messageL: "nishi sb ma", cancleTitle: "cancle") { (action) in
+//            print("\(action.title ?? "")")
+//        }
         
         LYJAlert.showAlert(title: "提示", message: "nishi sb ma", cancleTitle: "cancle", defaultTitle: "default") { (action) in
             print("\(action.title ?? "")")

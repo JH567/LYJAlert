@@ -122,10 +122,10 @@ private struct CurrentVCManager {
     static func activityCurrentViewController() -> UIViewController {
         
         var window = UIApplication.shared.keyWindow
-        if window?.windowLevel != UIWindowLevelNormal {
+        if window?.windowLevel != UIWindow.Level.normal {
             let windows = UIApplication.shared.windows
             for tmpWin in windows {
-                if tmpWin.windowLevel == UIWindowLevelNormal {
+                if tmpWin.windowLevel == UIWindow.Level.normal {
                     window = tmpWin
                     break
                 }
@@ -152,9 +152,9 @@ private struct CurrentVCManager {
                 currentViewController = tabBarController.selectedViewController!
             }
             else {
-                let childViewControllerCount = currentViewController.childViewControllers.count
+                let childViewControllerCount = currentViewController.children.count
                 if childViewControllerCount > 0 {
-                    currentViewController = currentViewController.childViewControllers.last!
+                    currentViewController = currentViewController.children.last!
                     return currentViewController
                 } else {
                     return currentViewController
